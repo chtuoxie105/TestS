@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">imagePicker</string>
+    <string name="imagepicker_general_ok">确定</string>
+    <string name="imagepicker_general_cancel">取消</string>
+    <string name="imagepicker_general_send">确定</string>
+    <string name="imagepicker_general_original">原图</string>
+    <string name="imagepicker_bracket_str">(%1$s)</string>
+    <string name="imagepicker_bracket_num">(%1$d)</string>
+    <string name="imagepicker_error_maximun_nine_photos">最多选择 %1$d 张图片</string>
+    <string name="imagepicker_general_all_pictures">所有图片</string>
+
+    <string name="general_max_per_image">图片过大，超过200k上限。</string>
+</resources>

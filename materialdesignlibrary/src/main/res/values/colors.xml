@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/blue500</color>
+    <color name="colorPrimaryDark">@color/blue700</color>
+    <color name="colorAccent">@color/bluea200</color>
+
+    <!--BottomNavigationView-->
+    <color name="itemActiveColorWithoutColoredBackground">#5677FC</color>
+    <color name="colorActive">#FFFFFF</color>
+    <color name="colorInactive">#E7E6E7</color>
+    <color name="withoutColoredBackground">#757575</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>

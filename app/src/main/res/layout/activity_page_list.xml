@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".page.PageListActivity">
+
+    <!--<com.example.testwifi.blue.MyKeyBoardView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@color/colorAccent" />-->
+
+        <!--<com.example.testwifi.page.TestView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp" />-->
+
+
+    <com.example.testwifi.page.ScrollRecyclerView
+        android:layout_marginTop="3dp"
+        android:id="@+id/test_page_recy_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

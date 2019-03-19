@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.testwifi.nestscroll.NestScroolLy xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_nest_root_view"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nestscroll.NestScrollActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/test_nestscroll_top"
+        android:background="@color/green600"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <com.example.testwifi.page.TestViewGroup
+            android:layout_width="match_parent"
+            android:background="@color/colorAccent"
+            android:elevation="3dp"
+            android:layout_height="match_parent">
+        </com.example.testwifi.page.TestViewGroup>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/test_nestscroll_recycle"
+        android:layout_width="match_parent"
+        android:background="@color/blue700"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/test_nestscroll_bottom"
+        android:layout_width="match_parent"
+        android:background="@color/yellow900"
+        android:layout_height="500dp"/>
+</com.example.testwifi.nestscroll.NestScroolLy>

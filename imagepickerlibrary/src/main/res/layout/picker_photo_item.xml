@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.imagepickerlibrary.widget.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photo_cell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.imagepickerlibrary.widget.CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        app:checkbox_color="@color/colorAccent"
+        app:checkbox_size="24dp"
+        app:show_border_in_check_state="true" />
+
+</com.imagepickerlibrary.widget.SquareRelativeLayout>

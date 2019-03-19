@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MaterialDesignLibrary</string>
+
+    <!--Google配色-->
+    <integer-array name="material_colors">
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorAccent</item>
+    </integer-array>
+
+</resources>

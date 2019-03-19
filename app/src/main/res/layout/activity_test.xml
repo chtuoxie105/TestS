@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_btn_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestActivity">
+
+    <Button
+        android:id="@+id/test_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="page1" />
+
+    <Button
+        android:id="@+id/test_btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="page2" />
+
+    <Button
+        android:id="@+id/test_btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="page2" />
+
+    <Button
+        android:id="@+id/test_btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recyclev" />
+    <Button
+        android:id="@+id/test_btn_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recyclev" />
+    <Button
+        android:id="@+id/test_btn_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recyclev" />
+
+    <Button
+        android:id="@+id/test_btn_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new task" />
+
+    <Button
+        android:id="@+id/test_btn_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="scroll recyclev" />
+
+    <Button
+        android:id="@+id/test_btn_9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NFC卡" />
+    <Button
+        android:id="@+id/test_btn_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera" />
+</LinearLayout>
