@@ -3,6 +3,7 @@ package com.example.testwifi.camera;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
+import android.os.Handler;
 import android.service.media.CameraPrewarmService;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;

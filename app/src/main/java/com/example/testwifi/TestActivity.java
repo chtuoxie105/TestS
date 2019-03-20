@@ -1,12 +1,15 @@
 package com.example.testwifi;
 
+import android.Manifest;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.testwifi.camera.CameraActivity;
+import com.example.testwifi.camera.PhoneActivity;
 import com.example.testwifi.nestscroll.NestScrollActivity;
 import com.example.testwifi.nfc.NFCIdCardActivity;
 import com.example.testwifi.page.FilterActivity;
@@ -34,12 +37,20 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.test_btn_8).setOnClickListener(this);
         findViewById(R.id.test_btn_9).setOnClickListener(this);
         findViewById(R.id.test_btn_10).setOnClickListener(this);
+        findViewById(R.id.test_btn_11).setOnClickListener(this);
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        request();
     }
 
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        Intent intent=null;
+        Intent intent = null;
         switch (id) {
             case R.id.test_btn_1:
                 intent = new Intent(TestActivity.this, PageListActivity.class);
@@ -71,7 +82,32 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.test_btn_10:
                 intent = new Intent(TestActivity.this, CameraActivity.class);
                 break;
+            case R.id.test_btn_11:
+                intent = new Intent(TestActivity.this, PhoneActivity.class);
+                break;
         }
-        startActivity(intent);
+        if (intent != null)
+            startActivity(intent);
+    }
+
+    PermissionUtil permissionUtil;
+
+    private void request() {
+        permissionUtil = new PermissionUtil(this);
+        permissionUtil.add(Manifest.permission.READ_PHONE_STATE);
+        permissionUtil.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        permissionUtil.add(Manifest.permission.CAMERA);
+        permissionUtil.add(Manifest.permission.CALL_PHONE);
+        permissionUtil.add(Manifest.permission.READ_CONTACTS);
+        permissionUtil.add(Manifest.permission.SEND_SMS);
+        permissionUtil.add(Manifest.permission.READ_SMS);
+        permissionUtil.add(Manifest.permission.RECEIVE_SMS);
+        permissionUtil.requestPermission(null);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        permissionUtil.onRequestPermissionResult(requestCode, permissions, grantResults);
     }
 }
